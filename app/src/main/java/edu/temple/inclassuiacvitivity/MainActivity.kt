@@ -28,6 +28,13 @@ class MainActivity : AppCompatActivity() {
         // TODO Step 4: Change TextView's text size to the number selected in the Spinner */
         spinner.onItemSelectedListener = object: OnItemSelectedListener{
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+                p0?.run{
+                    val numSize = getItemAtPosition(p2).toString()
+
+                    displayTextView.textSize = numSize.toFloat()
+
+                }
+
 
             }
 
