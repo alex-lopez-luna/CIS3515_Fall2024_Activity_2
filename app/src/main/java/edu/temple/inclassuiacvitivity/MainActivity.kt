@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         val displayTextView = findViewById<TextView>(R.id.textDisplay)
 
         /* TODO Step 2: Populate this array with multiples of 5 from 5 - 100*/
-        val numberArray = arrayOf(5)
+        val numberArray = Array(21, {i -> i * 5})
+
 
 
 
